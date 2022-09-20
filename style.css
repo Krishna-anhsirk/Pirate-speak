@@ -1,6 +1,78 @@
+/* Google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --primary-colour: #111827;
+  --colour-light: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* body {
+  background-image: url("/images/pirate.svg");
+  background-size: 40px 40px;
+} */
+
+nav {
+  font-size: larger;
+  text-align: center;
+  background-color: var(--primary-colour);
+  color: var(--colour-light);
+  padding: 1.5rem;
+}
+
+main {
+  margin: 2rem auto;
+  margin-left: 20%;
+}
+
+#input-txt {
+  display: block;
+  padding: 1rem;
+  min-height: 20vh;
+  width: 80%;
+}
+
+#btn-translate {
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: larger;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
 #output {
-  margin: 2rem;
-  height: 20vh;
-  width: 50vw;
+  margin: 1rem 0;
+  min-height: 20vh;
+  width: 80%;
+  padding: 1rem;
   border: 1px black solid;
+  background-color: #f8fafc;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary-colour);
+  color: var(--colour-light);
+  padding: 1.5rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer__title {
+  margin: 0.5rem;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.footer__content {
+  font-size: 0.85rem;
 }

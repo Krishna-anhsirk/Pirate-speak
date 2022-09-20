@@ -3,9 +3,7 @@ var translateText = document.querySelector("#btn-translate");
 var outputText = document.querySelector("#output");
 
 function urlConstructor(text) {
-  return (
-    "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=" + text
-  );
+  return "https://api.funtranslations.com/translate/pirate.json?text=" + text;
 }
 
 function doTranslate(text) {
