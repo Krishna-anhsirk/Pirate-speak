@@ -6,12 +6,17 @@ function urlConstructor(text) {
   return "https://api.funtranslations.com/translate/pirate.json?text=" + text;
 }
 
+function errorHandler(erorr) {
+  alert("Server error! Please try again after some time");
+  console.log("Error", error);
+}
+
 function doTranslate(text) {
   var url = urlConstructor(text);
-  fetch(url)
+  return fetch(url)
     .then((response) => response.json())
     .then((data) => (outputText.innerText = data.contents.translated))
-    .catch();
+    .catch(errorHandler);
 }
 
 translateText.addEventListener("click", () => {
